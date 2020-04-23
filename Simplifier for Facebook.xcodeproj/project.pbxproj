@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB2C916F24525B610031FC50 /* DOMElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C916E24525B610031FC50 /* DOMElementCell.swift */; };
+		CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74D245258E5004270AD /* AppDelegate.swift */; };
+		CB72B750245258E5004270AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74F245258E5004270AD /* ViewController.swift */; };
+		CB72B752245258E8004270AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB72B751245258E8004270AD /* Assets.xcassets */; };
+		CB72B755245258E8004270AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB72B753245258E8004270AD /* Main.storyboard */; };
+		CB72B7642452590C004270AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB72B7632452590C004270AD /* Cocoa.framework */; };
+		CB72B7672452590C004270AD /* defaultBlockList.json in Resources */ = {isa = PBXBuildFile; fileRef = CB72B7662452590C004270AD /* defaultBlockList.json */; };
+		CB72B7692452590C004270AD /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */; };
+		CB72B76E2452590C004270AD /* Content Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB72B7612452590C004270AD /* Content Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB72B76C2452590C004270AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB72B742245258E5004270AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB72B7602452590C004270AD;
+			remoteInfo = "Content Blocker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB72B7722452590C004270AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB72B76E2452590C004270AD /* Content Blocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB2C916E24525B610031FC50 /* DOMElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOMElementCell.swift; sourceTree = "<group>"; };
+		CB72B74A245258E5004270AD /* Simplifier for Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simplifier for Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB72B74D245258E5004270AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB72B74F245258E5004270AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB72B751245258E8004270AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB72B754245258E8004270AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB72B756245258E8004270AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB72B757245258E8004270AD /* Simplifier_for_Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Simplifier_for_Facebook.entitlements; sourceTree = "<group>"; };
+		CB72B7612452590C004270AD /* Content Blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Content Blocker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB72B7632452590C004270AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CB72B7662452590C004270AD /* defaultBlockList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = defaultBlockList.json; sourceTree = "<group>"; };
+		CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		CB72B76A2452590C004270AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB72B76B2452590C004270AD /* Content_Blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Content_Blocker.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB72B747245258E5004270AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB72B75E2452590C004270AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB72B7642452590C004270AD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB72B741245258E5004270AD = {
+			isa = PBXGroup;
+			children = (
+				CB72B74C245258E5004270AD /* Simplifier for Facebook */,
+				CB72B7652452590C004270AD /* Content Blocker */,
+				CB72B7622452590C004270AD /* Frameworks */,
+				CB72B74B245258E5004270AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB72B74B245258E5004270AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB72B74A245258E5004270AD /* Simplifier for Facebook.app */,
+				CB72B7612452590C004270AD /* Content Blocker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB72B74C245258E5004270AD /* Simplifier for Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				CB72B74D245258E5004270AD /* AppDelegate.swift */,
+				CB72B74F245258E5004270AD /* ViewController.swift */,
+				CB2C916E24525B610031FC50 /* DOMElementCell.swift */,
+				CB72B751245258E8004270AD /* Assets.xcassets */,
+				CB72B753245258E8004270AD /* Main.storyboard */,
+				CB72B756245258E8004270AD /* Info.plist */,
+				CB72B757245258E8004270AD /* Simplifier_for_Facebook.entitlements */,
+			);
+			path = "Simplifier for Facebook";
+			sourceTree = "<group>";
+		};
+		CB72B7622452590C004270AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB72B7632452590C004270AD /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB72B7652452590C004270AD /* Content Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				CB72B7662452590C004270AD /* defaultBlockList.json */,
+				CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */,
+				CB72B76A2452590C004270AD /* Info.plist */,
+				CB72B76B2452590C004270AD /* Content_Blocker.entitlements */,
+			);
+			path = "Content Blocker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB72B749245258E5004270AD /* Simplifier for Facebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB72B75A245258E8004270AD /* Build configuration list for PBXNativeTarget "Simplifier for Facebook" */;
+			buildPhases = (
+				CB72B746245258E5004270AD /* Sources */,
+				CB72B747245258E5004270AD /* Frameworks */,
+				CB72B748245258E5004270AD /* Resources */,
+				CB72B7722452590C004270AD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB72B76D2452590C004270AD /* PBXTargetDependency */,
+			);
+			name = "Simplifier for Facebook";
+			productName = "Simplifier for Facebook";
+			productReference = CB72B74A245258E5004270AD /* Simplifier for Facebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB72B7602452590C004270AD /* Content Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB72B76F2452590C004270AD /* Build configuration list for PBXNativeTarget "Content Blocker" */;
+			buildPhases = (
+				CB72B75D2452590C004270AD /* Sources */,
+				CB72B75E2452590C004270AD /* Frameworks */,
+				CB72B75F2452590C004270AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Content Blocker";
+			productName = "Content Blocker";
+			productReference = CB72B7612452590C004270AD /* Content Blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB72B742245258E5004270AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Patrick Botros";
+				TargetAttributes = {
+					CB72B749245258E5004270AD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					CB72B7602452590C004270AD = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CB72B745245258E5004270AD /* Build configuration list for PBXProject "Simplifier for Facebook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB72B741245258E5004270AD;
+			productRefGroup = CB72B74B245258E5004270AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB72B749245258E5004270AD /* Simplifier for Facebook */,
+				CB72B7602452590C004270AD /* Content Blocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB72B748245258E5004270AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB72B752245258E8004270AD /* Assets.xcassets in Resources */,
+				CB72B755245258E8004270AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB72B75F2452590C004270AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB72B7672452590C004270AD /* defaultBlockList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB72B746245258E5004270AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB72B750245258E5004270AD /* ViewController.swift in Sources */,
+				CB2C916F24525B610031FC50 /* DOMElementCell.swift in Sources */,
+				CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB72B75D2452590C004270AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB72B7692452590C004270AD /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB72B76D2452590C004270AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB72B7602452590C004270AD /* Content Blocker */;
+			targetProxy = CB72B76C2452590C004270AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB72B753245258E8004270AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB72B754245258E8004270AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB72B758245258E8004270AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB72B759245258E8004270AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CB72B75B245258E8004270AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Simplifier for Facebook/Simplifier_for_Facebook.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L27L4K8SQU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Simplifier for Facebook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CB72B75C245258E8004270AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Simplifier for Facebook/Simplifier_for_Facebook.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L27L4K8SQU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Simplifier for Facebook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CB72B7702452590C004270AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L27L4K8SQU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook.Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CB72B7712452590C004270AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L27L4K8SQU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook.Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB72B745245258E5004270AD /* Build configuration list for PBXProject "Simplifier for Facebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB72B758245258E8004270AD /* Debug */,
+				CB72B759245258E8004270AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB72B75A245258E8004270AD /* Build configuration list for PBXNativeTarget "Simplifier for Facebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB72B75B245258E8004270AD /* Debug */,
+				CB72B75C245258E8004270AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB72B76F2452590C004270AD /* Build configuration list for PBXNativeTarget "Content Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB72B7702452590C004270AD /* Debug */,
+				CB72B7712452590C004270AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB72B742245258E5004270AD /* Project object */;
+}
