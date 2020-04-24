@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Content Blocker</string>
+	<string>Simplifier for Facebook</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
@@ -32,6 +32,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Patrick Botros. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>Add a description of what your extension does here.</string>
+	<string>Facebook's homepage has become a behemoth. Facebook Simplifier streamlines the UI.</string>
 </dict>
 </plist>
