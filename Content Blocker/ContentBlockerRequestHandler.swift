@@ -9,7 +9,7 @@
 import Foundation
 import SafariServices
 
-let appGroupID: String = "L27L4K8SQU.shockerella.FacebookSimplifier"
+let appGroupID: String = "L27L4K8SQU.shockerella.Simplifier-for-Facebook"
 
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
 
