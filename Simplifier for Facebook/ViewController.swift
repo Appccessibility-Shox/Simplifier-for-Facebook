@@ -10,8 +10,8 @@ import Cocoa
 import SafariServices
 
 let defaults = UserDefaults.standard
-let appGroupID: String = "L27L4K8SQU.shockerella.FacebookSimplifier"
-let contentBlockerID: String = "shockerella.FacebookSimplifier.ContentBlocker"
+let appGroupID: String = "L27L4K8SQU.shockerella.Simplifier-for-Facebook"
+let contentBlockerID: String = "shockerella.Simplifier-for-Facebook.Content-Blocker"
 
 typealias SwiftyJSON = [[String: [String: Any]]]
 
