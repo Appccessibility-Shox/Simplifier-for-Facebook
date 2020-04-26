@@ -8,14 +8,14 @@
 
 import Cocoa
 
-protocol CheckBox: class {
+protocol DOMElementCellDelegate: class {
     func checkBox(blocked: Bool, index: Int)
     func updateBlockListJSON()
 }
 
 class DOMElementCell: NSTableRowView {
     var rowNumber: Int?
-    weak var delegate: CheckBox?
+    weak var delegate: DOMElementCellDelegate?
     var blockableElements: [BlockableElement]?
 
     @IBAction func checkBoxClicked(_ sender: Any) {

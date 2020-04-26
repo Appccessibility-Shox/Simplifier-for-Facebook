@@ -108,9 +108,9 @@
                     <window key="window" title="Simplifier for Facebook" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="450" height="500"/>
+                        <rect key="contentRect" x="196" y="240" width="450" height="440"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="375" height="375"/>
+                        <value key="minSize" type="size" width="375" height="420"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -128,17 +128,17 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Simplifier_for_Facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" id="hBG-Px-fVz" customClass="ColoredView" customModule="Simplifier_for_Facebook" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="307"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="313"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-YV-N7o">
-                                <rect key="frame" x="0.0" y="100" width="450" height="111"/>
+                                <rect key="frame" x="0.0" y="152" width="450" height="65"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="3ad-bb-Daf">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="65"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" rowSizeStyle="automatic" headerView="LEA-L1-Y4n" viewBased="YES" id="mj1-6d-aLL">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="52"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="background_color"/>
@@ -211,7 +211,7 @@
                                 </tableHeaderView>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zi0-Wh-XYj">
-                                <rect key="frame" x="13" y="231" width="146" height="41"/>
+                                <rect key="frame" x="13" y="237" width="146" height="41"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Blocklist" id="Tb2-hv-Q66">
                                     <font key="font" size="35" name="SFCompactRounded-Bold"/>
                                     <color key="textColor" name="font_color"/>
@@ -231,16 +231,31 @@
                                     <action selector="openSafariExtensionPreferences:" target="XfG-lQ-9wD" id="xAa-Rc-fnU"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-Tz-g4Q">
+                                <rect key="frame" x="67" y="84" width="316" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VqI-ha-A9Q"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Report an Issue or Suggest an Improvement…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SbI-yJ-geW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openIssuePage:" target="XfG-lQ-9wD" id="Z12-qi-BYV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Zi0-Wh-XYj" firstAttribute="top" secondItem="hBG-Px-fVz" secondAttribute="top" constant="35" id="3V1-0s-3ZH"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zi0-Wh-XYj" secondAttribute="trailing" constant="20" symbolic="YES" id="ASF-oy-2U6"/>
-                            <constraint firstAttribute="bottom" secondItem="dG1-YV-N7o" secondAttribute="bottom" constant="100" id="Lfq-YA-vJI"/>
+                            <constraint firstItem="Cxd-Tz-g4Q" firstAttribute="centerX" secondItem="hBG-Px-fVz" secondAttribute="centerX" id="BSU-Pr-MdO"/>
+                            <constraint firstAttribute="bottom" secondItem="dG1-YV-N7o" secondAttribute="bottom" constant="152" id="Lfq-YA-vJI"/>
                             <constraint firstItem="dG1-YV-N7o" firstAttribute="top" secondItem="Zi0-Wh-XYj" secondAttribute="bottom" constant="20" id="Tmp-V3-YpO"/>
                             <constraint firstItem="Zi0-Wh-XYj" firstAttribute="leading" secondItem="hBG-Px-fVz" secondAttribute="leading" constant="15" id="VTB-5F-OxJ"/>
                             <constraint firstAttribute="bottom" secondItem="vVF-iU-vUb" secondAttribute="bottom" constant="40" id="XpI-tZ-7AL"/>
                             <constraint firstAttribute="trailing" secondItem="dG1-YV-N7o" secondAttribute="trailing" id="ilc-15-Igc"/>
                             <constraint firstItem="vVF-iU-vUb" firstAttribute="centerX" secondItem="hBG-Px-fVz" secondAttribute="centerX" id="pJK-2z-rXB"/>
+                            <constraint firstItem="vVF-iU-vUb" firstAttribute="top" secondItem="Cxd-Tz-g4Q" secondAttribute="bottom" constant="30" id="qvn-vN-vKg"/>
                             <constraint firstItem="dG1-YV-N7o" firstAttribute="leading" secondItem="hBG-Px-fVz" secondAttribute="leading" id="xee-pA-f07"/>
                         </constraints>
                     </view>
@@ -249,7 +264,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75" y="884"/>
+            <point key="canvasLocation" x="75" y="883.5"/>
         </scene>
     </scenes>
     <resources>
