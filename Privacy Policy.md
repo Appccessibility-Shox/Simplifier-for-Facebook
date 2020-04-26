@@ -4,4 +4,4 @@ Facebook Simplifier does not collect any personal information whatsoever on user
 
 ## Questions
 
-If you have any further questions about the privacy policy, feel free to email me at keys4safari@gmail.com.
+If you have any further questions about the privacy policy, feel free to email me at simplifier4facebook@gmail.com.
