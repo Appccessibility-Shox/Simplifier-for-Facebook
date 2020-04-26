@@ -36,9 +36,13 @@ var blockableElements: [BlockableElement] = [
      BlockableElement(name: "Languages & Legal Footer", blocked: true, selector: "#pagelet_rhc_footer")
 ]
 
-class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, CheckBox {
+class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, DOMElementCellDelegate {
 
     @IBOutlet weak var tableView: NSTableView!
+
+    @IBAction func openIssuePage(_ sender: Any) {
+        NSWorkspace.shared.open(NSURL(string: "https://github.com/patrickshox/Simplifier-for-Facebook/issues")! as URL)
+    }
 
     @IBAction func openSafariExtensionPreferences(_ sender: Any) {
         SFSafariApplication.showPreferencesForExtension(withIdentifier: contentBlockerID)
