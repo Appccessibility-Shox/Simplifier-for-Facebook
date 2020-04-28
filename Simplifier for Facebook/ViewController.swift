@@ -75,7 +75,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             [
                 [
                     "trigger": [
-                        "url-filter": "https://www.facebook.com.*"
+                        "url-filter": "www.facebook.com"
                     ],
                     "action": [
                         "type": "css-display-none",
