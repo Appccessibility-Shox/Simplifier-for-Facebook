@@ -16,18 +16,17 @@ let contentBlockerID: String = "shockerella.Simplifier-for-Facebook.Content-Bloc
 typealias SwiftyJSON = [[String: [String: Any]]]
 
 class BlockableElement {
-    var elementName: String = ""
-    var blocked: Bool = false
-    var selector: String = ""
-    convenience init(name: String, blocked: Bool, selector: String) {
-        self.init()
+    var elementName: String
+    var blocked: Bool
+    var selector: String
+    init(name: String, blocked: Bool, selector: String) {
         self.elementName = name
         self.selector = selector
         self.blocked = blocked
     }
 }
 
-// Manually ensure these default values match the defaultBlockList.json.
+// Manually ensure these default block properties match the defaultBlockList.json.
 var blockableElements: [BlockableElement] = [
      BlockableElement(name: "Marketplace", blocked: true, selector: "a[data-testid='left_nav_item_Marketplace']"),
      BlockableElement(name: "Shortcuts", blocked: true, selector: "#pinnedNav.homeSideNav"),
@@ -48,8 +47,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         SFSafariApplication.showPreferencesForExtension(withIdentifier: contentBlockerID)
     }
 
-    var commaSeparatedSelectorsToBlock: String = ""
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // reload with user's custom block preferences.
@@ -59,13 +56,15 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         tableView.reloadData()
     }
 
+    var commaSeparatedSelectorsToBlock: String = ""
+
     func checkBox(blocked: Bool, index: Int) {
         blockableElements[index].blocked = blocked
         var selectorsToBlock: [String] = []
         for elementIndex in 0...blockableElements.count-1 where blockableElements[elementIndex].blocked {
             selectorsToBlock.append(blockableElements[elementIndex].selector)
-            commaSeparatedSelectorsToBlock = selectorsToBlock.joined(separator: ", ")
         }
+        commaSeparatedSelectorsToBlock = selectorsToBlock.joined(separator: ", ")
         tableView.reloadData()
     }
 
