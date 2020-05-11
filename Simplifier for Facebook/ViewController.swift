@@ -16,11 +16,10 @@ let contentBlockerID: String = "shockerella.Simplifier-for-Facebook.Content-Bloc
 typealias SwiftyJSON = [[String: [String: Any]]]
 
 class BlockableElement {
-    var elementName: String
+    let elementName, selector: String
     var blocked: Bool
-    var selector: String
-    init(name: String, blocked: Bool, selector: String) {
-        self.elementName = name
+    init(named: String, blocked: Bool, selector: String) {
+        self.elementName = named
         self.selector = selector
         self.blocked = blocked
     }
@@ -28,11 +27,11 @@ class BlockableElement {
 
 // Manually ensure these default block properties match the defaultBlockList.json.
 var blockableElements: [BlockableElement] = [
-     BlockableElement(name: "Marketplace", blocked: true, selector: "a[data-testid='left_nav_item_Marketplace']"),
-     BlockableElement(name: "Shortcuts", blocked: true, selector: "#pinnedNav.homeSideNav"),
-     BlockableElement(name: "Explore", blocked: true, selector: "#appsNav.homeSideNav"),
-     BlockableElement(name: "Stories", blocked: false, selector: "#stories_pagelet_below_composer"),
-     BlockableElement(name: "Languages & Legal Footer", blocked: true, selector: "#pagelet_rhc_footer")
+     BlockableElement(named: "Marketplace", blocked: true, selector: "a[data-testid='left_nav_item_Marketplace']"),
+     BlockableElement(named: "Shortcuts", blocked: true, selector: "#pinnedNav.homeSideNav"),
+     BlockableElement(named: "Explore", blocked: true, selector: "#appsNav.homeSideNav"),
+     BlockableElement(named: "Stories", blocked: false, selector: "#stories_pagelet_below_composer"),
+     BlockableElement(named: "Languages & Legal Footer", blocked: true, selector: "#pagelet_rhc_footer")
 ]
 
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, DOMElementCellDelegate {
@@ -56,9 +55,9 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         tableView.reloadData()
     }
 
-    var commaSeparatedSelectorsToBlock: String = ""
+    var commaSeparatedSelectorsToBlock = ""
 
-    func checkBox(blocked: Bool, index: Int) {
+    func updateDataSource(blocked: Bool, index: Int) {
         blockableElements[index].blocked = blocked
         var selectorsToBlock: [String] = []
         for elementIndex in 0...blockableElements.count-1 where blockableElements[elementIndex].blocked {
@@ -107,15 +106,14 @@ extension ViewController {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let domElementReuseID = NSUserInterfaceItemIdentifier(rawValue: "domElementIdentifier")
         if let cell = tableView.makeView(withIdentifier: domElementReuseID, owner: nil) as? DOMElementCell {
-            cell.elementNameLabel?.stringValue = blockableElements[row].elementName
             if blockableElements[row].blocked {
                 cell.checkBoxImage.image = NSImage(named: "checked")
             } else {
                 cell.checkBoxImage.image = NSImage(named: "unchecked")
             }
-
-            // here we assign the cell's properties which can be used in the DomElementCell methods.
-            cell.delegate = self
+            cell.elementName = blockableElements[row].elementName
+            cell.elementNameLabel?.stringValue = blockableElements[row].elementName
+            cell.containingViewController = self
             cell.rowNumber = row
             cell.blockableElements = blockableElements
 

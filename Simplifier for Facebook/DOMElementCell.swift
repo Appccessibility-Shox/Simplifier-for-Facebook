@@ -9,25 +9,25 @@
 import Cocoa
 
 protocol DOMElementCellDelegate: class {
-    func checkBox(blocked: Bool, index: Int)
+    func updateDataSource(blocked: Bool, index: Int)
     func updateBlockListJSON()
 }
 
 class DOMElementCell: NSTableRowView {
+    var elementName: String?
     var rowNumber: Int?
-    weak var delegate: DOMElementCellDelegate?
+    weak var containingViewController: DOMElementCellDelegate?
     var blockableElements: [BlockableElement]?
 
     @IBAction func checkBoxClicked(_ sender: Any) {
-        let name = blockableElements![rowNumber!].elementName
         if blockableElements![rowNumber!].blocked {
-            delegate?.checkBox(blocked: false, index: rowNumber!)
-            defaults.set(false, forKey: name)
-            delegate?.updateBlockListJSON()
+            containingViewController?.updateDataSource(blocked: false, index: rowNumber!)
+            containingViewController?.updateBlockListJSON()
+            defaults.set(false, forKey: elementName!)
         } else {
-            delegate?.checkBox(blocked: true, index: rowNumber!)
-            defaults.set(true, forKey: name)
-            delegate?.updateBlockListJSON()
+            containingViewController?.updateDataSource(blocked: true, index: rowNumber!)
+            containingViewController?.updateBlockListJSON()
+            defaults.set(true, forKey: elementName!)
         }
     }
     @IBOutlet weak var checkBoxImage: NSButton!
