@@ -13,7 +13,8 @@ let defaults = UserDefaults.standard
 let appGroupID: String = "L27L4K8SQU.shockerella.Simplifier-for-Facebook"
 let contentBlockerID: String = "shockerella.Simplifier-for-Facebook.Content-Blocker"
 
-typealias SwiftyJSON = [[String: [String: Any]]]
+typealias SwiftyBlockingRule = [String: [String: Any]]
+typealias SwiftyJSON = [SwiftyBlockingRule]
 
 class BlockableElement {
     let elementName, selector: String
@@ -105,7 +106,7 @@ extension ViewController {
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let domElementReuseID = NSUserInterfaceItemIdentifier(rawValue: "domElementIdentifier")
-        if let cell = tableView.makeView(withIdentifier: domElementReuseID, owner: nil) as? DOMElementCell {
+        if let cell = tableView.makeView(withIdentifier: domElementReuseID, owner: nil) as? BlockableElementRow {
             if blockableElements[row].blocked {
                 cell.checkBoxImage.image = NSImage(named: "checked")
             } else {

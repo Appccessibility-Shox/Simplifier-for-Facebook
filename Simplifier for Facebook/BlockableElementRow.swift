@@ -13,7 +13,7 @@ protocol DOMElementCellDelegate: class {
     func updateBlockListJSON()
 }
 
-class DOMElementCell: NSTableRowView {
+class BlockableElementRow: NSTableRowView {
     var elementName: String?
     var rowNumber: Int?
     weak var containingViewController: DOMElementCellDelegate?
