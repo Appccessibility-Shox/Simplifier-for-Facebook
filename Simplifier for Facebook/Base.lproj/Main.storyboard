@@ -157,7 +157,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="domElementIdentifier" id="Pge-dX-G67" customClass="DOMElementCell" customModule="Simplifier_for_Facebook" customModuleProvider="target">
+                                                        <tableCellView identifier="domElementIdentifier" id="Pge-dX-G67" customClass="BlockableElementRow" customModule="Simplifier_for_Facebook" customModuleProvider="target">
                                                             <rect key="frame" x="1" y="1" width="447" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
