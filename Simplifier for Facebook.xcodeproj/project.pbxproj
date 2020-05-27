@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB2C916F24525B610031FC50 /* BlockableElementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C916E24525B610031FC50 /* BlockableElementRow.swift */; };
+		CB5A6CEC247E237C009FAE6C /* BlockerRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */; };
 		CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74D245258E5004270AD /* AppDelegate.swift */; };
 		CB72B750245258E5004270AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74F245258E5004270AD /* ViewController.swift */; };
 		CB72B752245258E8004270AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB72B751245258E8004270AD /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		CB2C916E24525B610031FC50 /* BlockableElementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockableElementRow.swift; sourceTree = "<group>"; };
+		CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerRule.swift; sourceTree = "<group>"; };
 		CB72B74A245258E5004270AD /* Simplifier for Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simplifier for Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB72B74D245258E5004270AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB72B74F245258E5004270AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				CB72B74D245258E5004270AD /* AppDelegate.swift */,
 				CB72B74F245258E5004270AD /* ViewController.swift */,
+				CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */,
 				CB2C916E24525B610031FC50 /* BlockableElementRow.swift */,
 				CB72B751245258E8004270AD /* Assets.xcassets */,
 				CB72B753245258E8004270AD /* Main.storyboard */,
@@ -233,6 +236,7 @@
 			files = (
 				CB72B750245258E5004270AD /* ViewController.swift in Sources */,
 				CB2C916F24525B610031FC50 /* BlockableElementRow.swift in Sources */,
+				CB5A6CEC247E237C009FAE6C /* BlockerRule.swift in Sources */,
 				CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
