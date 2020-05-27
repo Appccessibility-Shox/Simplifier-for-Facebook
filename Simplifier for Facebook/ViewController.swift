@@ -13,26 +13,26 @@ let defaults = UserDefaults.standard
 let appGroupID: String = "L27L4K8SQU.shockerella.Simplifier-for-Facebook"
 let contentBlockerID: String = "shockerella.Simplifier-for-Facebook.Content-Blocker"
 
-typealias SwiftyBlockingRule = [String: [String: Any]]
-typealias SwiftyJSON = [SwiftyBlockingRule]
+typealias SwiftyJSON = [SwiftyRule]
 
 class BlockableElement {
-    let elementName, selector: String
+    let elementName: String
+    let rule: BlockerRule
     var blocked: Bool
-    init(named: String, blocked: Bool, selector: String) {
-        self.elementName = named
-        self.selector = selector
+    init(withName name: String, andRule rule: BlockerRule, isBlockedByDefault blocked: Bool) {
+        self.elementName = name
+        self.rule = rule
         self.blocked = blocked
     }
 }
 
 // Manually ensure these default block properties match the defaultBlockList.json.
 var blockableElements: [BlockableElement] = [
-     BlockableElement(named: "Marketplace", blocked: true, selector: "a[data-testid='left_nav_item_Marketplace']"),
-     BlockableElement(named: "Shortcuts", blocked: true, selector: "#pinnedNav.homeSideNav"),
-     BlockableElement(named: "Explore", blocked: true, selector: "#appsNav.homeSideNav"),
-     BlockableElement(named: "Stories", blocked: false, selector: "#stories_pagelet_below_composer"),
-     BlockableElement(named: "Languages & Legal Footer", blocked: true, selector: "#pagelet_rhc_footer")
+    BlockableElement(withName: "Marketplace", andRule: BlockerRule(selector: "a[data-testid='left_nav_item_Marketplace']"), isBlockedByDefault: true),
+    BlockableElement(withName: "Shortcuts", andRule: BlockerRule(selector: "a[data-testid='left_nav_item_Marketplace']"), isBlockedByDefault: true),
+    BlockableElement(withName: "Explore", andRule: BlockerRule(selector: "#appsNav.homeSideNav"), isBlockedByDefault: true),
+    BlockableElement(withName: "Stories", andRule: BlockerRule(selector: "#stories_pagelet_below_composer"), isBlockedByDefault: false),
+    BlockableElement(withName: "Languages & Legal Footer", andRule: BlockerRule(selector: "#pagelet_rhc_footer"), isBlockedByDefault: true)
 ]
 
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, DOMElementCellDelegate {
@@ -56,32 +56,26 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         tableView.reloadData()
     }
 
-    var commaSeparatedSelectorsToBlock = ""
+    var activeBlockingRules = [SwiftyRule]()
 
     func updateDataSource(blocked: Bool, index: Int) {
         blockableElements[index].blocked = blocked
-        var selectorsToBlock: [String] = []
+        activeBlockingRules = [SwiftyRule]()
         for elementIndex in 0...blockableElements.count-1 where blockableElements[elementIndex].blocked {
-            selectorsToBlock.append(blockableElements[elementIndex].selector)
+            activeBlockingRules.append(blockableElements[elementIndex].rule.asSwiftyRule())
         }
-        commaSeparatedSelectorsToBlock = selectorsToBlock.joined(separator: ", ")
         tableView.reloadData()
     }
 
     func updateBlockListJSON() {
 
-        let blockList: SwiftyJSON =
-            [
-                [
-                    "trigger": [
-                        "url-filter": "www.facebook.com"
-                    ],
-                    "action": [
-                        "type": "css-display-none",
-                        "selector": commaSeparatedSelectorsToBlock
-                    ]
-                ]
-            ]
+        var blockList = [Any]()
+
+        for activeRule in activeBlockingRules {
+            blockList.append(activeRule)
+        }
+
+        print(blockList)
 
         let blockListJSON = try? JSONSerialization.data(withJSONObject: blockList)
 
