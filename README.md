@@ -11,3 +11,5 @@ Tired of seeing Oculus, Townhall, and Marketplace? Facebook Simplifier enables u
 <br>
 
 ![Simplifier for Facebook Blocker and Containing App Running on a MacBookPro](Resources/DesktopPreview.png)
+
+Thanks for making Simplifier for Facebook one of the top 10 paid apps in the extensions gallery 🙏
