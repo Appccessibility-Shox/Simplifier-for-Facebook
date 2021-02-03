@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -132,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="313"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-YV-N7o">
+                            <scrollView borderType="none" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-YV-N7o">
                                 <rect key="frame" x="0.0" y="152" width="450" height="65"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="3ad-bb-Daf">
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="65"/>
@@ -145,7 +145,7 @@
                                             <color key="backgroundColor" name="background_color"/>
                                             <color key="gridColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn editable="NO" width="447" minWidth="40" maxWidth="1000" id="l9j-Uu-kcY">
+                                                <tableColumn editable="NO" width="418" minWidth="40" maxWidth="1000" id="l9j-Uu-kcY">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -157,8 +157,8 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="domElementIdentifier" id="Pge-dX-G67" customClass="BlockableElementRow" customModule="Simplifier_for_Facebook" customModuleProvider="target">
-                                                            <rect key="frame" x="1" y="1" width="447" height="50"/>
+                                                        <tableCellView identifier="domElementIdentifier" id="Pge-dX-G67" customClass="ChecklistRow" customModule="Simplifier_for_Facebook" customModuleProvider="target">
+                                                            <rect key="frame" x="11" y="1" width="427" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" id="kzN-9Z-6hd">
@@ -202,11 +202,11 @@
                                     <rect key="frame" x="-100" y="-100" width="438" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="OVB-l4-q7P">
-                                    <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="OVB-l4-q7P">
+                                    <rect key="frame" x="434" y="25" width="16" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <tableHeaderView key="headerView" hidden="YES" id="LEA-L1-Y4n">
+                                <tableHeaderView key="headerView" hidden="YES" wantsLayer="YES" id="LEA-L1-Y4n">
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
@@ -220,7 +220,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vVF-iU-vUb">
-                                <rect key="frame" x="84" y="33" width="282" height="32"/>
+                                <rect key="frame" x="87" y="33" width="276" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="mx8-fj-8qM"/>
                                 </constraints>
@@ -233,7 +233,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-Tz-g4Q">
-                                <rect key="frame" x="67" y="84" width="316" height="32"/>
+                                <rect key="frame" x="70" y="84" width="310" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="VqI-ha-A9Q"/>
                                 </constraints>

@@ -13,7 +13,7 @@ protocol DOMElementCellDelegate: class {
     func updateBlockListJSON()
 }
 
-class BlockableElementRow: NSTableRowView {
+class ChecklistRow: NSTableRowView {
     var elementName: String?
     var rowNumber: Int?
     weak var containingViewController: DOMElementCellDelegate?
@@ -30,7 +30,12 @@ class BlockableElementRow: NSTableRowView {
             defaults.set(true, forKey: elementName!)
         }
     }
+
     @IBOutlet weak var checkBoxImage: NSButton!
     @IBOutlet weak var elementNameLabel: NSTextFieldCell!
+
+    override func isAccessibilityElement() -> Bool {
+        return true
+    }
 }
 
