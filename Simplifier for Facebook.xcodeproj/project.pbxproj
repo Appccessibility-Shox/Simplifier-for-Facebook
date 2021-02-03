@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB2C916F24525B610031FC50 /* BlockableElementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C916E24525B610031FC50 /* BlockableElementRow.swift */; };
+		CB2C916F24525B610031FC50 /* ChecklistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C916E24525B610031FC50 /* ChecklistRow.swift */; };
 		CB5A6CEC247E237C009FAE6C /* BlockerRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */; };
 		CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74D245258E5004270AD /* AppDelegate.swift */; };
 		CB72B750245258E5004270AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B74F245258E5004270AD /* ViewController.swift */; };
 		CB72B752245258E8004270AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB72B751245258E8004270AD /* Assets.xcassets */; };
 		CB72B755245258E8004270AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB72B753245258E8004270AD /* Main.storyboard */; };
 		CB72B7642452590C004270AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB72B7632452590C004270AD /* Cocoa.framework */; };
-		CB72B7672452590C004270AD /* defaultBlockList.json in Resources */ = {isa = PBXBuildFile; fileRef = CB72B7662452590C004270AD /* defaultBlockList.json */; };
+		CB72B7672452590C004270AD /* defaultBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = CB72B7662452590C004270AD /* defaultBlockerList.json */; };
 		CB72B7692452590C004270AD /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */; };
 		CB72B76E2452590C004270AD /* Content Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB72B7612452590C004270AD /* Content Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -44,7 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CB2C916E24525B610031FC50 /* BlockableElementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockableElementRow.swift; sourceTree = "<group>"; };
+		CB2C916E24525B610031FC50 /* ChecklistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistRow.swift; sourceTree = "<group>"; };
 		CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerRule.swift; sourceTree = "<group>"; };
 		CB72B74A245258E5004270AD /* Simplifier for Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simplifier for Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB72B74D245258E5004270AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		CB72B757245258E8004270AD /* Simplifier_for_Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Simplifier_for_Facebook.entitlements; sourceTree = "<group>"; };
 		CB72B7612452590C004270AD /* Content Blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Content Blocker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB72B7632452590C004270AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		CB72B7662452590C004270AD /* defaultBlockList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = defaultBlockList.json; sourceTree = "<group>"; };
+		CB72B7662452590C004270AD /* defaultBlockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = defaultBlockerList.json; sourceTree = "<group>"; };
 		CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		CB72B76A2452590C004270AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB72B76B2452590C004270AD /* Content_Blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Content_Blocker.entitlements; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				CB72B74D245258E5004270AD /* AppDelegate.swift */,
 				CB72B74F245258E5004270AD /* ViewController.swift */,
 				CB5A6CEB247E237C009FAE6C /* BlockerRule.swift */,
-				CB2C916E24525B610031FC50 /* BlockableElementRow.swift */,
+				CB2C916E24525B610031FC50 /* ChecklistRow.swift */,
 				CB72B751245258E8004270AD /* Assets.xcassets */,
 				CB72B753245258E8004270AD /* Main.storyboard */,
 				CB72B756245258E8004270AD /* Info.plist */,
@@ -125,7 +125,7 @@
 		CB72B7652452590C004270AD /* Content Blocker */ = {
 			isa = PBXGroup;
 			children = (
-				CB72B7662452590C004270AD /* defaultBlockList.json */,
+				CB72B7662452590C004270AD /* defaultBlockerList.json */,
 				CB72B7682452590C004270AD /* ContentBlockerRequestHandler.swift */,
 				CB72B76A2452590C004270AD /* Info.plist */,
 				CB72B76B2452590C004270AD /* Content_Blocker.entitlements */,
@@ -179,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Patrick Botros";
 				TargetAttributes = {
 					CB72B749245258E5004270AD = {
@@ -223,7 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB72B7672452590C004270AD /* defaultBlockList.json in Resources */,
+				CB72B7672452590C004270AD /* defaultBlockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB72B750245258E5004270AD /* ViewController.swift in Sources */,
-				CB2C916F24525B610031FC50 /* BlockableElementRow.swift in Sources */,
+				CB2C916F24525B610031FC50 /* ChecklistRow.swift in Sources */,
 				CB5A6CEC247E237C009FAE6C /* BlockerRule.swift in Sources */,
 				CB72B74E245258E5004270AD /* AppDelegate.swift in Sources */,
 			);
@@ -390,6 +390,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Simplifier for Facebook/Simplifier_for_Facebook.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
@@ -413,6 +414,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Simplifier for Facebook/Simplifier_for_Facebook.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
@@ -456,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
