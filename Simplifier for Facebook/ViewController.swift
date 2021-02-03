@@ -3,7 +3,7 @@
 //  Simplifier for Facebook
 //
 //  Created by Patrick Botros on 4/23/20.
-//  Copyright © 2020 Patrick Botros. All rights reserved.
+//  Copyright © 2020 Patrick Botros. All rights reserved
 //
 
 import Cocoa
