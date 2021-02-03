@@ -32,6 +32,7 @@ struct BlockerRule {
     }
     var selector: String? {
         didSet {
+            printSelectorValidity()
             printActionValidity()
         }
     }
@@ -40,12 +41,33 @@ struct BlockerRule {
         self.triggers = triggers
         self.actionType = actionType
         self.selector = selector
+        printSelectorValidity()
+        printTriggerValidity()
+        printActionValidity()
+    }
+    
+    init(triggers: [triggerTypes: Any], actionType: actionTypes) {
+        self.triggers = triggers
+        self.actionType = actionType
+        printSelectorValidity()
         printTriggerValidity()
         printActionValidity()
     }
     
     init(selector: String) {
-        self.init(triggers: [triggerTypes.urlFilter: "facebook.com"], actionType: actionTypes.CSSDisplayNone, selector: selector)
+        self.init(triggers: [triggerTypes.urlFilter: "https?://www.facebook.com.*"], actionType: actionTypes.CSSDisplayNone, selector: selector)
+    }
+    
+    func printSelectorValidity() {
+        let numberOfOpenSquareBraces = self.selector?.filter { $0 == "[" }.count
+        let numberOfCloseSquareBraces = self.selector?.filter { $0 == "]" }.count
+        let numberOfSingleQuotes = self.selector?.filter { $0 == "'"}.count
+        if numberOfOpenSquareBraces != numberOfCloseSquareBraces {
+            print("Selectors must contain an equal number of opening and closing square braces: \(selector ?? "")")
+        }
+        if (numberOfSingleQuotes ?? 0 % 2) == 1 {
+            print("Selectors must contain an equal number of opening and closing single quotes: \(selector ?? "")")
+        }
     }
 
     func printTriggerValidity() {

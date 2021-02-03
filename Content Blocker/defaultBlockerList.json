@@ -1,0 +1,507 @@
+[
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='VideoChatHomeUnit']"
+    }
+  },
+  {
+    "action" : {
+      "selector" : "li a[href$='\/marketplace\/?ref=bookmark']",
+      "type" : "css-display-none"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "selector" : "li.buofh1pr.to382e16.o5zgeu5y.jrc8bbd0.dawyy4b1.h676nmdw.hw7htvoc a[href='\/marketplace\/?ref=app_tab']",
+      "type" : "css-display-none"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/marketplace.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "li a[href$='\/groups\/?ref=bookmarks']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "li.buofh1pr.h676nmdw a[href*='\/groups\/']"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/groups.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "footer[role='contentinfo']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/events']"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/events\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='facebook.com\/pages\/']"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "a[href$='\/memories\/?source=bookmark']"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "a[href$='facebook.com\/jobs\/?source=bookmark']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/jobs.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "selector" : "a[href='https:\/\/www.facebook.com\/270208243080697\/']",
+      "type" : "css-display-none"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/Oculusvr\/"
+    }
+  },
+  {
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/blooddonations\/']",
+      "type" : "css-display-none"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/blooddonations\/.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/ads\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/ads\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='www.facebook.com\/campus\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/campus\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href='\/community_help\/?page_source=facebook_bookmark']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/community_help\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='secure.facebook.com\/facebook_pay\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/secure.facebook.com\/facebook_pay\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/weather\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/weather\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href='https:\/\/www.facebook.com\/coronavirus_info\/?page_source=bookmark']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/coronavirus_info\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href='https:\/\/www.facebook.com\/?sk=favorites']"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/?sk=favorites"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href='https:\/\/www.facebook.com\/bookmarks\/lists\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/bookmarks\/lists\/"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href='https:\/\/www.facebook.com\/fundraisers\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/fundraisers\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/donate\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/climatescienceinfo\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/climatescienceinfo\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/games\/']"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/games\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/gaming\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/gaming\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='\/liftblackvoices\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/liftblackvoices\/.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='www.facebook.com\/watch\/live\/?ref=live_bookmark']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/watch\/live\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='www.facebook.com\/messenger_kids\/?referrer=bookmark']"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/messenger_kids\/.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='www.facebook.com\/?sk=h_chr']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='www.facebook.com\/movies\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/messenger_kids\/.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='\/wallet']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/offers\/v2\/wallet.*"
+    }
+  },
+  {
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='facebook.com\/saved\/']"
+    },
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "type" : "css-display-none",
+      "selector" : "div[data-pagelet='LeftRail'] a[href$='\/townhall\/?ref=bookmarks']"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/townhall.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com.*"
+    },
+    "action" : {
+      "selector" : "div[data-pagelet='LeftRail'] a[href*='\/votinginformationcenter\/']",
+      "type" : "css-display-none"
+    }
+  },
+  {
+    "trigger" : {
+      "url-filter" : "https?:\/\/www.facebook.com\/votinginformationcenter.*"
+    },
+    "action" : {
+      "type" : "block"
+    }
+  }
+]
