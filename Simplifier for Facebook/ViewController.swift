@@ -40,7 +40,7 @@ var blockableElements: [BlockableElement] = [
     
     BlockableElement(withName: "Stories", andRule: BlockerRule(selector: "div.d2edcug0.e3xpq0al"), isBlockedByDefault: false),
 
-    BlockableElement(withName: "Create Post", andRule: BlockerRule(selector: "div.tr9rh885.k4urcfbm div.sjgh65i0 div.j83agx80.k4urcfbm.l9j0dhe7"), isBlockedByDefault: false),
+    BlockableElement(withName: "Create Post", andRule: BlockerRule(selector: "div.tr9rh885.k4urcfbm div.sjgh65i0 div.j83agx80.k4urcfbm.l9j0dhe7 div[aria-label='Create a post']"), isBlockedByDefault: false),
 
     BlockableElement(withName: "Rooms", andRule: BlockerRule(selector: "div[data-pagelet='VideoChatHomeUnit']"), isBlockedByDefault: true),
 
