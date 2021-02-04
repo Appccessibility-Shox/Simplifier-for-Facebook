@@ -393,7 +393,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Simplifier for Facebook/Info.plist";
@@ -401,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -417,7 +417,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Simplifier for Facebook/Info.plist";
@@ -425,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -438,7 +438,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Content Blocker/Info.plist";
@@ -447,7 +447,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook.Content-Blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -461,7 +461,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Content Blocker/Content_Blocker.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = L27L4K8SQU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Content Blocker/Info.plist";
@@ -470,7 +470,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "shockerella.Simplifier-for-Facebook.Content-Blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
