@@ -6,7 +6,7 @@
     <img align="right" style="position: absolute" src="Resources/MacAppStoreBadge.svg">
   </a>
 </h1>
-Tired of seeing Oculus, Townhall, and Marketplace? Facebook Simplifier enables uers to streamline Facebook's cluttered UI. 
+Tired of seeing Oculus, Townhall, and Marketplace? Simplifier for Facebook is a browser extension that enables users to streamline Facebook's cluttered UI. 
 
 If you prefer a streamlined design for accessibility reasons, please email me at shockerellaapps@gmail.com for 100% off (no questions asked). For example, if you're a person with an intellectual disability or a senior who finds Facebook's UI difficult to navigate, if you have ADHD or poor eyesight, I encourage you to email me to obtain this application for free.
 
