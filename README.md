@@ -15,3 +15,10 @@ If you prefer a streamlined design for accessibility reasons, please email me at
 ![Simplifier for Facebook Blocker and Containing App Running on a MacBookPro](Resources/DesktopPreview.png)
 
 Thanks for making Simplifier for Facebook one of the top 10 paid apps in the extensions gallery 🙏
+
+### As seen on...
+- [Sohu.com](https://www.sohu.com/a/448883423_120672283)
+- [CNBlogs.com](https://www-cnblogs-com.translate.goog/diandianlingge/p/14378135.html?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc)
+- [MacJB](https://www.macjb.com/mac/9897.html)
+- [Mac69](https://www.mac69.com/mac/12437.html)
+- [MacZ](https://www.macz.com/mac/7879.html)
